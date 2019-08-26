@@ -1,0 +1,48 @@
+.mainNav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.movement {
+  list-style: none;
+}
+
+.folder__file {
+  overflow: hidden;
+}
+
+.folder__dropdownIcon {
+  width: 16px;
+  height: 14px;
+  background: url("img/dropdownIcon.png");
+  display: inline-block;
+}
+
+.folder__dropdownIcon--dropped {
+  transform: rotateX(180deg);
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown--visible {
+  display: block;
+}
+
+
+.hr {
+  width: 40%;
+  height: 2px;
+  background-color: gray;
+  margin: 20px auto 40px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.img--common {
+  display: block;
+  margin: 0 auto;
+}
