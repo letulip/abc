@@ -33,6 +33,17 @@ body {
 
 .movement {
   list-style: none;
+  padding-left: 0;
+}
+
+.movement__item {
+  padding-bottom: 5px;
+}
+
+.movement__icon {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
 }
 
 .material {
