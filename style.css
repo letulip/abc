@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+}
+
+.mainNav {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid #cccccc88;
+}
+
+.mainNav__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainNav__link {
+  display: none;
+}
+
+.position {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movement {
+  list-style: none;
+  padding-left: 0;
+}
+
+.movement__item {
+  padding-bottom: 5px;
+}
+
+.movement__icon {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+}
+
+.material {
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  max-width: 363px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.material__title {
+  padding: 10px 10px;
+  border: 2px solid lightgrey;
+  border-bottom: 0;
+  color: grey;
+  margin-right: 5px;
+}
+
+.material__title--active {
+  /* padding: 12px; */
+  border: 2px solid cadetblue;
+  border-bottom: 0;
+  color: black;
+  font-weight: bold;
+}
+
+.folder {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid cadetblue;
+}
+
+.folder__file {
+  overflow: hidden;
+}
+
+.folder__heading {
+  color: cornflowerblue;
+}
+
+.folder__dropdownIcon {
+  width: 16px;
+  height: 14px;
+  background: url("img/dropdownIcon.png");
+  display: inline-block;
+}
+
+.folder__dropdownIcon--dropped {
+  transform: rotateX(180deg);
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown--visible {
+  display: block;
+}
+
+.hr {
+  width: 40%;
+  height: 2px;
+  background-color: cadetblue;
+  margin: 20px auto 40px;
+}
+
+.montage {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.montage__element {
+  margin-bottom: 30px;
+}
+
+.text__link {
+  color: cornflowerblue;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.img--common {
+  display: block;
+  margin: 0 auto;
+}
+
+.img--logo {
+  height: 30px;
+}
+
+.img--burger {
+  height: 30px;
+}
+
+.compensator {
+  display: flex;
+  justify-content: space-around;
+}
