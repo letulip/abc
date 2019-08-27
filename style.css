@@ -56,7 +56,7 @@ body {
 }
 
 .material__title {
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: 2px solid lightgrey;
   border-bottom: 0;
   color: grey;
@@ -68,6 +68,7 @@ body {
   border: 2px solid cadetblue;
   border-bottom: 0;
   color: black;
+  font-weight: bold;
 }
 
 .folder {
@@ -145,4 +146,9 @@ body {
 
 .img--burger {
   height: 30px;
+}
+
+.compensator {
+  display: flex;
+  justify-content: space-around;
 }
