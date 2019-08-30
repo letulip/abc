@@ -9,8 +9,8 @@
 
 ## Первое приближение мобильного интерфейса можно посмотреть здесь!
 ### Шпонки варианты интерфейса
-1. (https://letulip.github.io/abc/demoSponki.html)
+1. [Вариант 1](https://letulip.github.io/abc/demoSponki.html)
 
 ### Дилетационные устройства варианты интерфейса
-1. (https://letulip.github.io/abc/demoSvy.html)
-2. (https://letulip.github.io/abc/demoSvy2.html)
+1. [Вариант 1](https://letulip.github.io/abc/demoSvy.html)
+2. [Вариант 2](https://letulip.github.io/abc/demoSvy2.html)
