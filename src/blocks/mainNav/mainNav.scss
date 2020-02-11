@@ -1,0 +1,11 @@
+.mainNav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.mainNav__item {
+  background-color: $color1;
+  min-width: 100px;
+  min-height: 25px;
+}
