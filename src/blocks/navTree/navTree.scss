@@ -4,3 +4,11 @@
   height: auto;
   margin: $outer;
 }
+
+.navTree__item .navTree__list {
+  display: none;
+}
+
+.navTree__item--active .navTree__list {
+  display: block;
+}
