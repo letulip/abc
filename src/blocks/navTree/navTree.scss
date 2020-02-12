@@ -11,8 +11,10 @@
 }
 
 .navTree__item {
-  padding-block-start: $outer-0-5;
-  padding-block-end: $outer-0-5;
+}
+
+.navTree__item:last-child {
+  margin-block-end: $outer-1-2;
 }
 
 .navTree__item .navTree__list {
@@ -23,14 +25,39 @@
   display: block;
 }
 
-.navTree__aquastop {
-
-}
-
 .navTree__firstLevel {
-
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  padding-inline-start: $outer-1;
+  padding-inline-end: $outer-1;
+  margin-block-end: $outer-1;
+  background-color: $color2;
 }
 
 .navTree__secondLevel {
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+  margin-block-end: $outer-0-5;
+  background-color: $color4;
+  border: $navTree-border-second;
+  border-radius: $navTree-border-radius-second;
+}
 
+.navTree__secondLevel--active {
+  background-color: $main-color;
+}
+
+.navTree__thirdLevel {
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  padding-inline-start: $outer-1;
+  padding-inline-end: $outer-1;
+}
+
+.navTree__aquastop {
+  padding-block-start: $outer-1;
+  padding-block-end: $outer-1;
+  background-color: $color3;
 }
