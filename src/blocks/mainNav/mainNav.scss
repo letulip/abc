@@ -1,11 +1,31 @@
+.mainNav__top {
+
+}
+
+.mainNav__bottom {
+  height: 45px;
+  background-color: $main-color;
+}
+
 .mainNav__list {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .mainNav__item {
-  background-color: $color1;
-  min-width: 100px;
-  min-height: 25px;
+  // min-height: 25px;
+}
+
+.mainNav__item--burger {
+  display: none;
+}
+
+.mainNav__link {
+  text-decoration: none;
+  color: $main-nav-link-color;
+  font-weight: bolder;
 }
