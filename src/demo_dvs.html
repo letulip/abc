@@ -9,13 +9,15 @@
 <body class="pageBody">
   <header class="pageHeader">
     <nav class="mainNav">
-      <div class="mainNav__top">
-        <img src="img/logo.png" alt="" class="mainNav__logo">
-        <a href="tel:+" class="mainNav__phone"></a>
-        <input type="text" name="" id="" class="mainNav__search">
+      <div class="mainNav__top width width--fullscreen">
+        <div class="mainNav__wrapper">
+          <img src="img/logo.png" width="60" height="45" alt="" class="mainNav__logo">
+          <a class="mainNav__phone" href="tel:+74951500207">+7 (495) 150-02-07</a>
+          <input class="mainNav__search" type="text" name="" id="">
+        </div>
       </div>
       <div class="mainNav__bottom">
-        <ul class="mainNav__list">
+        <ul class="mainNav__list width width--fullscreen">
           <li class="mainNav__item mainNav__item--home">
             <a href="" class="mainNav__link">Главная</a>
           </li>
@@ -46,20 +48,25 @@
     </nav>
   </header>
   <main class="pageMain">
-    <div class="navTree">
-      <ul class="navTree__list">
-        <li class="navTree__item">Item 1</li>
-        <li class="navTree__item">Item 2</li>
-        <li class="navTree__item">Item 3</li>
-        <li class="navTree__item">Item 4</li>
-        <li class="navTree__item">Item 5</li>
-      </ul>
+    <div class="pageMain__wrapper width width--fullscreen">
+      <div class="navTree">
+        <ul class="navTree__list">
+          <li class="navTree__item">Item 1</li>
+          <li class="navTree__item">Item 2</li>
+          <li class="navTree__item">Item 3</li>
+          <li class="navTree__item">Item 4</li>
+          <li class="navTree__item">Item 5</li>
+        </ul>
+      </div>
+      <div class="pageLayout">
+        <div class="navTop"></div>
+        <div class="content"></div>
+      </div>
     </div>
-    <div class="pageLayout">
-      <div class="navTop"></div>
-      <div class="content"></div>
-    </div>
+    
   </main>
-  <footer class="pageFooter"></footer>
+  <footer class="pageFooter">
+    <div class="pageFooter__wrapper width width--fullscreen"></div>
+  </footer>
 </body>
 </html>

@@ -8,8 +8,11 @@ $color4: skyblue;
 
 $main-color: royalblue;
 
+$main-nav-bg-color: $main-color;
 $main-nav-link-color: white;
 
 // margins and paddings
 
 $outer: 10px;
+$outer-1-2: $outer * 1.2;
+$outer-2: $outer * 2;

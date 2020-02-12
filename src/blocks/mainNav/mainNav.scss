@@ -1,25 +1,43 @@
-.mainNav__top {
+.mainNav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline-start: $outer-2;
+  margin-inline-end: $outer-2;
+}
 
+.mainNav__logo {
+  width: 60px;
+  height: 45px;
+  margin-block-start: $outer;
+  margin-block-end: $outer;
 }
 
 .mainNav__bottom {
   height: 45px;
-  background-color: $main-color;
+  background-color: $main-nav-bg-color;
 }
 
 .mainNav__list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   list-style: none;
   margin-block-end: 0;
   margin-block-start: 0;
   height: 100%;
+  padding-inline-start: 0;
 }
 
 .mainNav__item {
   // min-height: 25px;
   // display: flex;
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+  padding-block-start: $outer-1-2;
+  padding-block-end: $outer;
+  border-right: 1px solid $color2;
+  height: 100%;
 }
 
 .mainNav__item--burger {
@@ -30,4 +48,17 @@
   text-decoration: none;
   color: $main-nav-link-color;
   font-weight: bolder;
+}
+
+.mainNav__phone {
+  text-decoration: none;
+  color: $main-color;
+  padding-inline-start: $outer;
+  // padding-inline-end: $outer;
+  padding-block-start: $outer;
+  padding-block-end: $outer;
+}
+
+.mainNav__search {
+  display: none;
 }
