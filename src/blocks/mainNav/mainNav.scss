@@ -38,6 +38,11 @@
   padding-block-end: $outer;
   border-right: 1px solid $color2;
   height: 100%;
+  cursor: pointer;
+
+  &--active {
+    background-color: $color4;
+  }
 }
 
 .mainNav__item--burger {
