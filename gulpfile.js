@@ -81,11 +81,15 @@ const createSprite = () => {
 
 const copyFonts = () =>{
   return src([
-    'fonts/**/*.ttf',
+    'src/fonts/*.ttf',
+    'src/fonts/*.woff',
+    'src/fonts/*.woff2',
+    'src/fonts/*.eot',
+    'src/fonts/*.svg',
   ], {
     base: 'src'
   })
-    .pipe(dest('dist'));
+    .pipe(dest('dist/fonts/'));
 };
 
 const jsWatch = () => {
