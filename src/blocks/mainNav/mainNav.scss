@@ -9,8 +9,8 @@
 .mainNav__logo {
   width: 60px;
   height: 45px;
-  margin-block-start: $outer;
-  margin-block-end: $outer;
+  margin-block-start: $outer-1;
+  margin-block-end: $outer-1;
 }
 
 .mainNav__bottom {
@@ -35,7 +35,7 @@
   padding-inline-start: $outer-2;
   padding-inline-end: $outer-2;
   padding-block-start: $outer-1-2;
-  padding-block-end: $outer;
+  padding-block-end: $outer-1;
   border-right: 1px solid $color2;
   height: 100%;
   cursor: pointer;
@@ -58,10 +58,10 @@
 .mainNav__phone {
   text-decoration: none;
   color: $main-color;
-  padding-inline-start: $outer;
-  // padding-inline-end: $outer;
-  padding-block-start: $outer;
-  padding-block-end: $outer;
+  padding-inline-start: $outer-1;
+  // padding-inline-end: $outer-1;
+  padding-block-start: $outer-1;
+  padding-block-end: $outer-1;
 }
 
 .mainNav__search {

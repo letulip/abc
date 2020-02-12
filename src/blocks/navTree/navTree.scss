@@ -2,7 +2,17 @@
   width: 100%;
   max-width: 290px;
   height: auto;
-  margin: $outer;
+  margin: $outer-1;
+}
+
+.navTree__list {
+  list-style: none;
+  padding-inline-start: $outer-1;
+}
+
+.navTree__item {
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
 }
 
 .navTree__item .navTree__list {
@@ -11,4 +21,16 @@
 
 .navTree__item--active .navTree__list {
   display: block;
+}
+
+.navTree__aquastop {
+
+}
+
+.navTree__firstLevel {
+
+}
+
+.navTree__secondLevel {
+
 }
