@@ -8,13 +8,35 @@
 .navTree__list {
   list-style: none;
   padding-inline-start: $outer-1;
+  margin-block-end: $outer-1-2;
+}
+
+.navTree__list--first {
+  
+}
+
+.navTree__list--second {
+  
+}
+
+.navTree__list--third {
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  border: $navTree-border-list-third;
+  border-radius: $navTree-border-radius-list-third;
 }
 
 .navTree__item {
 }
 
+.navTree__item--third {
+  border-bottom: $navTree-border-third;
+}
+
 .navTree__item:last-child {
-  margin-block-end: $outer-1-2;
+  // margin-block-end: $outer-1-2;
 }
 
 .navTree__item .navTree__list {
@@ -32,6 +54,12 @@
   padding-inline-end: $outer-1;
   margin-block-end: $outer-1;
   background-color: $color2;
+  border: $navTree-border-first;
+  border-radius: $navTree-border-radius-first;
+}
+
+.navTree__firstLevel--active {
+  background-color: $main-color;
 }
 
 .navTree__secondLevel {
@@ -54,10 +82,17 @@
   padding-block-end: $outer-0-5;
   padding-inline-start: $outer-1;
   padding-inline-end: $outer-1;
+  background-color: $color1;
+  border-radius: $navTree-border-radius-third;
+}
+
+.navTree__thirdLevel--active {
+  background-color: $color3;
 }
 
 .navTree__aquastop {
   padding-block-start: $outer-1;
   padding-block-end: $outer-1;
   background-color: $color3;
+  border: none;
 }

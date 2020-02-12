@@ -21,5 +21,11 @@ $outer-2: $outer * 2;
 
 // borders
 
+$navTree-border-first: 1px solid $color;
+$navTree-border-radius-first: 0px;
 $navTree-border-second: 1px solid $main-color;
 $navTree-border-radius-second: 5px;
+$navTree-border-list-third: 1px solid $main-color;
+$navTree-border-radius-list-third: 9px;
+$navTree-border-third: 1px solid $color3;
+$navTree-border-radius-third: 2px;
