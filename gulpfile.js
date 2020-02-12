@@ -89,7 +89,7 @@ const copyFonts = () =>{
   ], {
     base: 'src'
   })
-    .pipe(dest('dist/fonts/'));
+    .pipe(dest('dist/'));
 };
 
 const jsWatch = () => {

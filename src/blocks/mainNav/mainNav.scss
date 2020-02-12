@@ -10,14 +10,16 @@
 .mainNav__list {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   list-style: none;
   margin-block-end: 0;
   margin-block-start: 0;
+  height: 100%;
 }
 
 .mainNav__item {
   // min-height: 25px;
+  // display: flex;
 }
 
 .mainNav__item--burger {
