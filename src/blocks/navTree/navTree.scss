@@ -76,7 +76,8 @@
 }
 
 .navTree__secondLevel--active {
-  background-color: $main-color;
+  background-color: $color3;
+  color: $main-color;
 }
 
 .navTree__thirdLevel {
@@ -90,6 +91,7 @@
 
 .navTree__thirdLevel--active {
   background-color: $color3;
+  color: $main-color;
 }
 
 .navTree__aquastop {

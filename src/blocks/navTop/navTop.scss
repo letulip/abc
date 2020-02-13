@@ -3,3 +3,30 @@
   max-width: 100%;
   margin: $outer-1;
 }
+
+.navTop__list {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.navTop__item {
+  margin-inline-start: $outer-1;
+  margin-inline-end: $outer-1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+}
+
+.navTop__item:not(:last-child) {
+  width: auto;
+  max-width: 100px;
+  color: $color5;
+}
+
+.navTop__item--vr {
+  color: $color5;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}

@@ -5,6 +5,7 @@ $color1: white;
 $color2: lightblue;
 $color3: lightgrey;
 $color4: skyblue;
+$color5: grey;
 
 $main-color: royalblue;
 
@@ -18,15 +19,17 @@ $outer-0-5: $outer * 0.5;
 $outer-1: $outer;
 $outer-1-2: $outer * 1.2;
 $outer-2: $outer * 2;
-$outer-2: $outer * 3;
+$outer-3: $outer * 3;
 
 // borders
 
 $navTree-border-first: 1px solid $color;
 $navTree-border-radius-first: 0px;
+
 $navTree-border-second: 1px solid $main-color;
 $navTree-border-radius-second: 5px;
-$navTree-border-list-third: 1px solid $main-color;
+
+$navTree-border-list-third: 1px solid $color3;
 $navTree-border-radius-list-third: 9px;
 $navTree-border-third: 1px solid $color3;
 $navTree-border-radius-third: 2px;
