@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline-start: $outer-2;
-  margin-inline-end: $outer-2;
+  // margin-inline-start: $outer-2;
+  // margin-inline-end: $outer-2;
 }
 
 .mainNav__logo {
@@ -11,6 +11,11 @@
   height: 45px;
   margin-block-start: $outer-1;
   margin-block-end: $outer-1;
+  margin-inline-start: $outer-2;
+}
+
+.mainNav__phone {
+  margin-inline-end: $outer-2;
 }
 
 .mainNav__bottom {
