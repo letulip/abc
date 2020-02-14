@@ -60,6 +60,13 @@
   border-radius: $navTree-border-radius-first;
 }
 
+.navTree__firstLevel:hover,
+.navTree__firstLevel:focus {
+  cursor: pointer;
+  color: $main-color;
+  background-color: $color1;
+}
+
 .navTree__firstLevel--active {
   background-color: $main-color;
 }
@@ -75,6 +82,13 @@
   border-radius: $navTree-border-radius-second;
 }
 
+.navTree__secondLevel:hover,
+.navTree__secondLevel:focus {
+  cursor: pointer;
+  color: $main-color;
+  background-color: $color1;
+}
+
 .navTree__secondLevel--active {
   background-color: $color3;
   color: $main-color;
@@ -87,6 +101,13 @@
   padding-inline-end: $outer-1;
   background-color: $color1;
   border-radius: $navTree-border-radius-third;
+}
+
+.navTree__thirdLevel:hover,
+.navTree__thirdLevel:focus {
+  cursor: pointer;
+  color: $main-color;
+  background-color: $color1;
 }
 
 .navTree__thirdLevel--active {
