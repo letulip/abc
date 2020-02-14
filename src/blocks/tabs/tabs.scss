@@ -1,0 +1,161 @@
+.grid__tabInput {
+  display: none;
+}
+
+.grid__tabs {
+  display: none;
+}
+
+.grid__tab {
+  color: $main-color;
+  font-weight: 400;
+  margin-left: 0;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  &--block {
+    width: 100%;
+    display: block;
+  }
+}
+
+#tab1:checked ~ #labelTab1 .grid__dropdown,
+#tab2:checked ~ #labelTab2 .grid__dropdown,
+#tab3:checked ~ #labelTab3 .grid__dropdown {
+  transform: rotate(360deg);
+}
+
+.grid__tabContent {
+  display: flex;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  min-height: 0;
+  transform: translateY(-10%);
+  transition: opacity, transform, height;
+  transition-duration: .1s;
+  margin: 0;
+  padding-left: 35px;
+  padding-bottom: 0;
+}
+
+#tab1:checked ~ #resourceTab1-1,
+#tab1:checked ~ #resourceTab1-2,
+#tab2:checked ~ #resourceTab2-1,
+#tab2:checked ~ #resourceTab2-2,
+#tab3:checked ~ #resourceTab3-1,
+#tab3:checked ~ #resourceTab3-2 {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  transform: translateY(0%);
+  margin-top: 0;
+  margin-bottom: 30px;
+  transition-duration: .3s;
+}
+
+// mobile-album
+
+.grid__tabdbEncryptTab {
+  display: none;
+}
+
+// tablet
+
+.grid--tabs {
+  position: relative;
+  padding-top: 50px;
+}
+
+.grid__tabdbEncryptTab {
+  display: none;
+}
+
+.grid__tab {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.grid__tab .grid__dropdown {
+  display: none;
+}
+
+.grid__tab--2 {
+  left: 220px;
+}
+
+.grid__tab--3 {
+  left: 365px;
+}
+
+#tab1:checked ~ #labelTab1,
+#tab2:checked ~ #labelTab2,
+#tab3:checked ~ #labelTab3 {
+  // color: $main-text-color;
+  border-bottom: 2px solid $main-color;
+}
+
+.grid__tabContent {
+  padding: 0 calc(50% - 455px);
+}
+
+.grid__tab--1 {
+  left: 100px;
+}
+
+.grid__tab--2 {
+  left: 315px;
+}
+
+.grid__tab--3 {
+  left: 450px;
+}
+
+#tab1:checked ~ #resourceTab1-1,
+#tab1:checked ~ #resourceTab1-2,
+#tab2:checked ~ #resourceTab2-1,
+#tab2:checked ~ #resourceTab2-2,
+#tab3:checked ~ #resourceTab3-1,
+#tab3:checked ~ #resourceTab3-2 {
+  margin-top: 20px;
+}
+
+// tablet album
+
+.grid__tabdbEncryptTab {
+  display: none;
+}
+
+.grid__tab--1 {
+  left: 200px;
+}
+
+.grid__tab--2 {
+  left: 415px;
+}
+
+.grid__tab--3 {
+  left: 550px;
+}
+
+// desktop
+
+.grid__tabdbEncryptTab {
+  display: none;
+}
+
+.grid__tab--1 {
+  left: 280px;
+}
+
+.grid__tab--2 {
+  left: 495px;
+}
+
+.grid__tab--3 {
+  left: 630px;
+}

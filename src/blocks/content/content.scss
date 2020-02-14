@@ -1,0 +1,10 @@
+.content {
+  min-height: 300px;
+  border: $content-border;
+  background-color: $color1;
+  margin-block-start: $outer-2;
+  padding-block-start: $outer-2;
+  padding-block-end: $outer-2;
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+}
