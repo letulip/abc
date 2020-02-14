@@ -50,6 +50,17 @@
   }
 }
 
+.mainNav__item:hover,
+.mainNav__item:focus {
+  cursor: pointer;
+  background-color: $color2;
+}
+
+.mainNav__item:hover .mainNav__link,
+.mainNav__item:focus .mainNav__link {
+  color: $main-color;
+}
+
 .mainNav__item--burger {
   display: none;
 }
@@ -67,6 +78,12 @@
   // padding-inline-end: $outer-1;
   padding-block-start: $outer-1;
   padding-block-end: $outer-1;
+}
+
+.mainNav__phone:hover,
+.mainNav__phone:focus,
+.mainNav__phone:active {
+  color: $color5;
 }
 
 .mainNav__search {
