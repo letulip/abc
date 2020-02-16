@@ -1,4 +1,16 @@
-.grid__tabInput {
+
+.grid__dropdown-text {
+  display: none;
+  padding-left: 37px;
+
+  &--show {
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.tabs__tabInput {
   display: none;
 }
 
@@ -6,7 +18,7 @@
   display: none;
 }
 
-.grid__tab {
+.tabs__tab {
   color: $main-color;
   font-weight: 400;
   margin-left: 0;
@@ -63,7 +75,7 @@
 
 // tablet
 
-.grid--tabs {
+.tabs {
   position: relative;
   padding-top: 50px;
 }
@@ -72,7 +84,7 @@
   display: none;
 }
 
-.grid__tab {
+.tabs__tab {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -80,15 +92,15 @@
   top: 0;
 }
 
-.grid__tab .grid__dropdown {
+.tabs__tab .grid__dropdown {
   display: none;
 }
 
-.grid__tab--2 {
+.tabs__tab--2 {
   left: 220px;
 }
 
-.grid__tab--3 {
+.tabs__tab--3 {
   left: 365px;
 }
 
@@ -103,15 +115,15 @@
   padding: 0 calc(50% - 455px);
 }
 
-.grid__tab--1 {
-  left: 100px;
+.tabs__tab--1 {
+  left: 0;
 }
 
-.grid__tab--2 {
+.tabs__tab--2 {
   left: 315px;
 }
 
-.grid__tab--3 {
+.tabs__tab--3 {
   left: 450px;
 }
 
@@ -130,15 +142,15 @@
   display: none;
 }
 
-.grid__tab--1 {
-  left: 200px;
+.tabs__tab--1 {
+  left: 0;
 }
 
-.grid__tab--2 {
+.tabs__tab--2 {
   left: 415px;
 }
 
-.grid__tab--3 {
+.tabs__tab--3 {
   left: 550px;
 }
 
@@ -148,14 +160,14 @@
   display: none;
 }
 
-.grid__tab--1 {
-  left: 280px;
+.tabs__tab--1 {
+  left: 0;
 }
 
-.grid__tab--2 {
-  left: 495px;
+.tabs__tab--2 {
+  left: 195px;
 }
 
-.grid__tab--3 {
-  left: 630px;
+.tabs__tab--3 {
+  left: 330px;
 }
