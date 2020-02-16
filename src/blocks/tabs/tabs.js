@@ -7,7 +7,6 @@ const searchAllTabs = (content, contentIndex) => {
   const tabsContentSecond = tabsContentFirst[contentIndex].querySelectorAll(`.tabs__tabContent--second`);
   tabsSecond.forEach((tab, index) => {
     tab.addEventListener(`click`, () => {
-      console.log(`${contentIndex} tab ${index} second level click`);
       tabSecondEventListner(tabsSecond, index, tabsContentSecond);
     });
   
@@ -33,10 +32,8 @@ const setActiveTabContent = (tabsContent, index) => {
   
   tabsContent.forEach((tabContent) => {
     tabContent.classList.remove(`tabs__tabContent--active`);
-    // tabContent.classList.remove(`tabs__tabContent--second-active`);
   })
   tabsContent[index].classList.add(`tabs__tabContent--active`);
-  // tabsContent[index].classList.add(`tabs__tabContent--second-active`);
 };
 
 const tabFirstEventListner = (tabs, index, content) => {
