@@ -11,30 +11,41 @@
   color: $main-color;
   font-weight: 400;
   margin-inline-start: 0;
-  margin-inline-end: $outer-1;
+  margin-inline-end: $outer-0-5;
   padding-inline-start: $outer-2;
   padding-inline-end: $outer-2;
   padding-block-start: $outer-1;
   padding-block-end: $outer-1;
   top: 0;
-  background-color: $color3;
+  background-color: $color1;
   border: 2px solid $color3;
   border-bottom: none;
   cursor: pointer;
 
   &--active {
     border: 2px solid $main-color;
+    background-color: $color3;
     border-bottom: none;
+    font-weight: bolder;
+  }
+}
+
+.tabs__tab--second {
+  background-color: $color2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+  &-active {
+    border: 2px solid $main-color;
+    background-color: $color3;
+    border-bottom: none;
+    font-weight: bolder;
   }
 }
 
 .tabs__tabContent {
   display: none;
   flex-direction: column;
-  min-height: 0;
-  transform: translateY(-10%);
-  transition: opacity, transform, height;
-  transition-duration: .1s;
   margin: 0;
 
   &--active {
