@@ -34,7 +34,8 @@
 
 #tab1:checked ~ #labelTab1 .grid__dropdown,
 #tab2:checked ~ #labelTab2 .grid__dropdown,
-#tab3:checked ~ #labelTab3 .grid__dropdown {
+#tab3:checked ~ #labelTab3 .grid__dropdown,
+#tab4:checked ~ #labelTab4 .grid__dropdown {
   transform: rotate(360deg);
 }
 
@@ -57,7 +58,9 @@
 #tab2:checked ~ #resourceTab2-1,
 #tab2:checked ~ #resourceTab2-2,
 #tab3:checked ~ #resourceTab3-1,
-#tab3:checked ~ #resourceTab3-2 {
+#tab3:checked ~ #resourceTab3-2,
+#tab4:checked ~ #resourceTab4-1,
+#tab4:checked ~ #resourceTab4-2 {
   visibility: visible;
   height: auto;
   opacity: 1;
@@ -85,11 +88,12 @@
 }
 
 .tabs__tab {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+  padding-block-start: $outer-1;
   position: absolute;
   top: 0;
+  background-color: $color3;
 }
 
 .tabs__tab .grid__dropdown {
@@ -104,9 +108,14 @@
   left: 365px;
 }
 
+.tabs__tab--4 {
+  left: 365px;
+}
+
 #tab1:checked ~ #labelTab1,
 #tab2:checked ~ #labelTab2,
-#tab3:checked ~ #labelTab3 {
+#tab3:checked ~ #labelTab3,
+#tab4:checked ~ #labelTab4  {
   // color: $main-text-color;
   border-bottom: 2px solid $main-color;
 }
@@ -127,12 +136,18 @@
   left: 450px;
 }
 
+.tabs__tab--4 {
+  left: 365px;
+}
+
 #tab1:checked ~ #resourceTab1-1,
 #tab1:checked ~ #resourceTab1-2,
 #tab2:checked ~ #resourceTab2-1,
 #tab2:checked ~ #resourceTab2-2,
 #tab3:checked ~ #resourceTab3-1,
-#tab3:checked ~ #resourceTab3-2 {
+#tab3:checked ~ #resourceTab3-2,
+#tab4:checked ~ #resourceTab4-1,
+#tab4:checked ~ #resourceTab4-2 {
   margin-top: 20px;
 }
 
@@ -154,6 +169,10 @@
   left: 550px;
 }
 
+.tabs__tab--4 {
+  left: 365px;
+}
+
 // desktop
 
 .grid__tabdbEncryptTab {
@@ -165,9 +184,13 @@
 }
 
 .tabs__tab--2 {
-  left: 195px;
+  left: 190px;
 }
 
 .tabs__tab--3 {
-  left: 330px;
+  left: 365px;
+}
+
+.tabs__tab--4 {
+  left:460px;
 }
