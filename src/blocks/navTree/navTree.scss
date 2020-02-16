@@ -49,6 +49,19 @@
   display: block;
 }
 
+.navTree__arrow {
+  display: inline-block;
+  width: 15px;
+  margin-inline-end: $outer-1;
+  transition: all;
+  transition-duration: 0.2s;
+
+  &--dropped {
+    transform: rotate(90deg);
+    width: 15px;
+  }
+}
+
 .navTree__firstLevel {
   padding-block-start: $outer-0-5;
   padding-block-end: $outer-0-5;
@@ -74,7 +87,7 @@
 .navTree__secondLevel {
   padding-block-start: $outer-0-5;
   padding-block-end: $outer-0-5;
-  padding-inline-start: $outer-2;
+  padding-inline-start: $outer-1;
   padding-inline-end: $outer-2;
   margin-block-end: $outer-0-5;
   background-color: $color4;

@@ -30,6 +30,10 @@
   color: $color5;
 }
 
+.navTop__item:last-child {
+  font-weight: bolder;
+}
+
 .navTop__item:not(.navTop__item--vr) {
   // cursor: pointer;
 }
