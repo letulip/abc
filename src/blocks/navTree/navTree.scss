@@ -45,7 +45,8 @@
   display: none;
 }
 
-.navTree__item--active .navTree__list {
+.navTree__item--first-active .navTree__list--second,
+.navTree__item--second-active .navTree__list--third {
   display: block;
 }
 
