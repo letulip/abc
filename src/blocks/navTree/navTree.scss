@@ -32,18 +32,18 @@
 }
 
 .navTree__item {
+
+  &:last-child {
+    // margin-block-end: $outer-1-2;
+  }
+
+  & .navTree__list {
+    display: none;
+  }
 }
 
 .navTree__item--third {
   border-bottom: $navTree-border-third;
-}
-
-.navTree__item:last-child {
-  // margin-block-end: $outer-1-2;
-}
-
-.navTree__item .navTree__list {
-  display: none;
 }
 
 .navTree__item--first-active .navTree__list--second,
@@ -57,11 +57,11 @@
   margin-inline-end: $outer-1;
   transition: all;
   transition-duration: 0.2s;
+}
 
-  &--dropped {
-    transform: rotate(90deg);
-    width: 15px;
-  }
+.navTree__arrow--dropped {
+  transform: rotate(90deg);
+  width: 15px;
 }
 
 .navTree__firstLevel {
@@ -73,14 +73,14 @@
   background-color: $color1;
   border: $navTree-border-first;
   border-radius: $navTree-border-radius-first;
-}
 
-.navTree__firstLevel:hover,
-.navTree__firstLevel:focus {
-  cursor: pointer;
-  color: $main-color;
-  border: $navTree-border-first-hover;
-  background-color: $color2;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $main-color;
+    border: $navTree-border-first-hover;
+    background-color: $color2;
+  }
 }
 
 .navTree__firstLevel--active {
@@ -97,14 +97,14 @@
   background-color: $color1;
   border: $navTree-border-second;
   border-radius: $navTree-border-radius-second;
-}
 
-.navTree__secondLevel:hover,
-.navTree__secondLevel:focus {
-  cursor: pointer;
-  color: $main-color;
-  border: $navTree-border-second-hover;
-  background-color: $color2;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $main-color;
+    border: $navTree-border-second-hover;
+    background-color: $color2;
+  }
 }
 
 .navTree__secondLevel--active {
@@ -119,13 +119,13 @@
   padding-inline-end: $outer-1;
   background-color: $color1;
   border-radius: $navTree-border-radius-third;
-}
 
-.navTree__thirdLevel:hover,
-.navTree__thirdLevel:focus {
-  cursor: pointer;
-  color: $main-color;
-  background-color: $color1;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $main-color;
+    background-color: $color1;
+  }
 }
 
 .navTree__thirdLevel--active {
@@ -139,9 +139,9 @@
   padding-block-end: $outer-1-2;
   background-color: $color3;
   border: none;
-}
 
-.navTree__firstLevel--aquastop:hover,
-.navTree__firstLevel--aquastop:focus {
-  border: none;
+  &:hover,
+  &:focus {
+    border: none;
+  }
 }

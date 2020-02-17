@@ -22,26 +22,26 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-}
 
-.navTop__item:not(:last-child) {
-  width: auto;
-  max-width: 100px;
-  color: $color5;
-}
-
-.navTop__item:last-child {
-  font-weight: bolder;
-}
-
-.navTop__item:not(.navTop__item--vr) {
-  // cursor: pointer;
-}
-
-.navTop__item:not(.navTop__item--vr):not(:last-child):hover,
-.navTop__item:not(.navTop__item--vr):not(:last-child):focus {
-  cursor: pointer;
-  color: $main-color;
+  &:not(:last-child) {
+    width: auto;
+    max-width: 100px;
+    color: $color5;
+  }
+  
+  &:last-child {
+    font-weight: bolder;
+  }
+  
+  &:not(.navTop__item--vr) {
+    // cursor: pointer;
+  }
+  
+  &:not(.navTop__item--vr):not(:last-child):hover,
+  &:not(.navTop__item--vr):not(:last-child):focus {
+    cursor: pointer;
+    color: $main-color;
+  }
 }
 
 .navTop__item--vr {

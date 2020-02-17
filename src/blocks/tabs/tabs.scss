@@ -24,30 +24,23 @@
   cursor: pointer;
   transition: all ease-in-out 0.1s;
 
-  &--active {
-    border: 2px solid $main-color;
-    background-color: $color3;
-    border-bottom: none;
-    font-weight: bolder;
-  }
-
   &:hover,
   &:focus {
     background-color: $color4;
   }
 }
 
+.tabs__tab--active {
+  border: 2px solid $main-color;
+  background-color: $color3;
+  border-bottom: none;
+  font-weight: bolder;
+}
+
 .tabs__tab--second {
   background-color: $color2;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
-  &-active {
-    border: 2px solid $main-color;
-    background-color: $color3;
-    border-bottom: none;
-    font-weight: bolder;
-  }
 
   &:hover,
   &:focus {
@@ -55,15 +48,22 @@
     color: $color1;
   }
 }
+  
+.tabs__tab--second-active {
+  border: 2px solid $main-color;
+  background-color: $color3;
+  border-bottom: none;
+  font-weight: bolder;
+}
 
 .tabs__tabContent {
   display: none;
   flex-direction: column;
   margin: 0;
+}
 
-  &--active {
-    display: flex;
-  }
+.tabs__tabContent--active {
+  display: flex;
 }
 
 // mobile-album
