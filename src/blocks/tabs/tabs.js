@@ -28,7 +28,7 @@ const setActiveTabSecond = (tabs, index) => {
 };
 
 const setActiveTabContent = (tabsContent, index) => {
-  console.log(tabsContent);
+  // console.log(tabsContent);
   
   tabsContent.forEach((tabContent) => {
     tabContent.classList.remove(`tabs__tabContent--active`);
@@ -48,7 +48,7 @@ const tabSecondEventListner = (tabs, index, content) => {
 
 tabsFirst.forEach((tab, index) => {
   tab.addEventListener(`click`, () => {
-    console.log(`tab ${index} first level click`);
+    // console.log(`tab ${index} first level click`);
     tabFirstEventListner(tabsFirst, index, tabsContentFirst);
   });
 

@@ -7,11 +7,21 @@
   border: $view-border;
 }
 
+.techInfo__row--top {
+  background-color: $color7;
+}
+
 .techInfo__data {
   border: $view-border;
   text-align: center;
   padding-block-start: $outer-0-5;
   padding-block-end: $outer-0-5;
+}
+
+.techInfo__data--first {
+  font-weight: bolder;
+  text-align: left;
+  padding-inline-start: $outer-1;
 }
 
 .techInfo__data--wide {
@@ -23,4 +33,5 @@
   font-weight: bolder;
   text-align: left;
   padding-inline-start: $outer-1;
+  background-color: $color8;
 }
