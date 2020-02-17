@@ -27,10 +27,12 @@ $outer-3: $outer * 3;
 
 // borders
 
-$navTree-border-first: 1px solid $color;
+$navTree-border-first: 1px solid $color3;
+$navTree-border-first-hover: 1px solid $color;
 $navTree-border-radius-first: 0px;
 
 $navTree-border-second: 1px solid $main-color;
+$navTree-border-second-hover: 1px solid $color;
 $navTree-border-radius-second: 5px;
 
 $navTree-border-list-third: 1px solid $color3;

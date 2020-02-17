@@ -22,12 +22,18 @@
   border: 2px solid $color3;
   border-bottom: none;
   cursor: pointer;
+  transition: all ease-in-out 0.1s;
 
   &--active {
     border: 2px solid $main-color;
     background-color: $color3;
     border-bottom: none;
     font-weight: bolder;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color4;
   }
 }
 
@@ -41,6 +47,12 @@
     background-color: $color3;
     border-bottom: none;
     font-weight: bolder;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color;
+    color: $color1;
   }
 }
 
