@@ -28,6 +28,7 @@
   margin-inline-start: $outer-2;
   border: $navTree-border-list-third;
   border-radius: $navTree-border-radius-list-third;
+  background-color: $color1;
 }
 
 .navTree__item {
@@ -133,8 +134,9 @@
 }
 
 .navTree__firstLevel--aquastop {
+  padding-inline-start: $outer-1-2;
   padding-block-start: $outer-1;
-  padding-block-end: $outer-1;
+  padding-block-end: $outer-1-2;
   background-color: $color3;
   border: none;
 }
