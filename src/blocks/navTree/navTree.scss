@@ -5,6 +5,11 @@
   margin: $outer-1;
 }
 
+.navTree__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navTree__list {
   list-style: none;
   padding-inline-start: $outer-1;
