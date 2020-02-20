@@ -68,6 +68,31 @@
   display: flex;
 }
 
+.tabs__input {
+  display: none;
+}
+
+#tab0:checked + .tabs__tab {
+  border: 2px solid $main-color;
+  background-color: $color3;
+  border-bottom: none;
+  font-weight: bolder;
+}
+
+#tab0:checked ~ .tabs__tabContent--0,
+#tab1:checked ~ .tabs__tabContent--1,
+#tab2:checked ~ .tabs__tabContent--2,
+#tab3:checked ~ .tabs__tabContent--3 {
+  display: flex;
+}
+
+#tab0 ~ .tabs__tabContent--0,
+#tab1 ~ .tabs__tabContent--1,
+#tab2 ~ .tabs__tabContent--2,
+#tab3 ~ .tabs__tabContent--3 {
+  display: none;
+}
+
 // mobile-album
 
 // tablet
