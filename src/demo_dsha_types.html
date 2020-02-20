@@ -458,15 +458,16 @@
               </h3>
               <div class="tabs__second">
                 <div class="tabs__labels">
-                  <label class="tabs__tab tabs__tab--second tabs__tab--second-active">
+                  <label class="tabs__tab tabs__tab--second" for="tab0">
                     Вид
                   </label>
-                  <label class="tabs__tab tabs__tab--second">
+                  <label class="tabs__tab tabs__tab--second" for="tab1">
                     Примеры комплектаций
                   </label>
                 </div>
-    
-                <article class="tabs__tabContent tabs__tabContent--second tabs__tabContent--active">
+
+                <input type="radio" class="tabs__input" id="tab0" name="tabs" value="tab0" checked>
+                <article class="tabs__tabContent tabs__tabContent--second tabs__tabContent--0">
                   <h3 class="heading heading--h3">
                     ВИД
                   </h3>
@@ -509,7 +510,9 @@
                     </tr>
                   </table>
                 </article>
-                <article class="tabs__tabContent tabs__tabContent--second">
+
+                <input type="radio" class="tabs__input" id="tab1" name="tabs" value="tab1">
+                <article class="tabs__tabContent tabs__tabContent--second tabs__tabContent--1">
                   <h3 class="heading heading--h3">
                     Примеры комплектаций
                   </h3>
