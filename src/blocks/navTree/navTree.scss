@@ -5,6 +5,8 @@
   height: auto;
   margin: $outer-1;
   left: -290px;
+  top: 0;
+  padding-block-start: $outer-2;
   height: 100vh;
   background-color: $color2;
   overflow-y: scroll;
@@ -62,7 +64,7 @@
 }
 
 .navTree__list--first {
-  
+  padding-inline-start: 0;
 }
 
 .navTree__list--second {
@@ -207,6 +209,10 @@
   .navTree {
     position: relative;
     left: 0;
+    // top: 0;
+    padding-block-start: 0;
+    // padding-inline-start: $outer-1;
+    overflow: auto;
     height: auto;
     background-color: transparent;
   }
@@ -217,6 +223,9 @@
 
   .navTree__list {
     opacity: 1;
+  }
+  .navTree__list--first {
+    padding-inline-start: $outer-1;
   }
 }
 
