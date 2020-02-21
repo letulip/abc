@@ -120,7 +120,7 @@ const serve = () => {
 
   watch(['src/blocks/**/*.scss', 'src/scss/**/*.scss', 'src/scss/style.scss'], style).on('change', server.reload);
   watch('src/*.html', copyHtml);
-  watch(['src/js/**/*.js', 'src/blocks/**/*.js'], jsWatch);
+  watch(['src/js/**/*.js', 'src/blocks/**/*.js'], jsWatch).on('change', server.reload);
 
   watch('*.html').on('change', server.reload);
 };

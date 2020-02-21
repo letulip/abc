@@ -1,8 +1,50 @@
 .navTree {
+  position: fixed;
   width: 100%;
   max-width: 290px;
   height: auto;
   margin: $outer-1;
+  left: -290px;
+  height: 100vh;
+  background-color: $color2;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.navTree--visible {
+  left: -10px;
+}
+
+.navTree--visible .navTree__slider {
+  left: 290px;
+}
+
+.navTree--visible .navTree__arrowSlider {
+  margin-inline-start: 0;
+  transform: rotate(180deg) scale(1.3) translate(13px);
+}
+
+.navTree--visible .navTree__list {
+  opacity: 1;
+}
+
+.navTree__slider {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: $color5;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.navTree__arrowSlider {
+  display: block;
+  color: $color2;
+  margin-inline-start: 12px;
+  margin-block-start: 10px;
+  transform: scale(1.3);
 }
 
 .navTree__link {
@@ -15,6 +57,8 @@
   padding-inline-start: $outer-1;
   margin-block-end: $outer-1-2;
   margin-block-start: 0;
+  opacity: 0.1;
+  transition: all ease-in-out 0.2s;
 }
 
 .navTree__list--first {
@@ -149,4 +193,37 @@
   &:focus {
     border: none;
   }
+}
+
+@media (min-width: $width-mobile-album) {
+
+}
+
+@media (min-width: $width-tablet) {
+  
+}
+
+@media (min-width: $width-tablet-album) {
+  .navTree {
+    position: relative;
+    left: 0;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .navTree__slider {
+    display: none;
+  }
+
+  .navTree__list {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  
+}
+
+@media (min-width: $width-desktop-wide) {
+  
 }

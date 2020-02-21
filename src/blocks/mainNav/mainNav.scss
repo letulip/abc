@@ -57,10 +57,6 @@
   background-color: $color4;
 }
 
-.mainNav__item--burger {
-  display: none;
-}
-
 .mainNav__link {
   text-decoration: none;
   color: $main-nav-link-color;
@@ -85,4 +81,36 @@
 
 .mainNav__search {
   display: none;
+}
+
+.mainNav__item--burger {
+  margin-inline-start: auto;
+}
+
+.mainNav__burger {
+  max-height: 100%;
+}
+
+@media (min-width: $width-mobile-album) {
+
+}
+
+@media (min-width: $width-tablet) {
+  .mainNav__item-noTablet {
+    display: none;
+  }
+}
+
+@media (min-width: $width-tablet-album) {
+  .mainNav__item--burger {
+    display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  
+}
+
+@media (min-width: $width-desktop-wide) {
+  
 }

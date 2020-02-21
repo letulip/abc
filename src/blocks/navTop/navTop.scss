@@ -27,6 +27,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  position: relative;
 
   &:not(:last-child) {
     width: auto;

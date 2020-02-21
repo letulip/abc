@@ -2,6 +2,28 @@
   // background-color: $color3;
   height: 100%;
   width: 100%;
-  margin: $outer-1;
-  margin-inline-end: $outer-2;
+  margin: $outer-2;
+}
+
+@media (min-width: $width-mobile-album) {
+
+}
+
+@media (min-width: $width-tablet) {
+  
+}
+
+@media (min-width: $width-tablet-album) {
+  .pageLayout {
+    margin: $outer-1;
+    margin-inline-end: $outer-2;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  
+}
+
+@media (min-width: $width-desktop-wide) {
+  
 }
