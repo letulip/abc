@@ -1,0 +1,95 @@
+.tabs__labels {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 2px solid $main-color;
+  margin-block-end: $outer-2;
+}
+
+.tabs__tab {
+  display: inline-block;
+  color: $main-color;
+  font-weight: 400;
+  margin-inline-start: 0;
+  margin-inline-end: $outer-0-5;
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+  padding-block-start: $outer-1;
+  padding-block-end: $outer-1;
+  top: 0;
+  background-color: $color1;
+  border: 2px solid $color3;
+  border-bottom: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color4;
+  }
+}
+
+.tabs__tab--active {
+  border: 2px solid $main-color;
+  background-color: $color3;
+  border-bottom: none;
+  font-weight: bolder;
+}
+
+.tabs__tab--second {
+  background-color: $color2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $color;
+    color: $color1;
+  }
+}
+  
+.tabs__tab--second-active {
+  border: 2px solid $main-color;
+  background-color: $color3;
+  border-bottom: none;
+  font-weight: bolder;
+}
+
+.tabs__tabContent {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+}
+
+.tabs__tabContent--active {
+  display: flex;
+}
+
+.tabs__input {
+  display: none;
+}
+
+#tab0:checked + .tabs__tab {
+  border: 2px solid $main-color;
+  background-color: $color3;
+  border-bottom: none;
+  font-weight: bolder;
+}
+
+#tab0:checked ~ .tabs__tabContent--0,
+#tab1:checked ~ .tabs__tabContent--1,
+#tab2:checked ~ .tabs__tabContent--2,
+#tab3:checked ~ .tabs__tabContent--3 {
+  display: flex;
+}
+
+// mobile-album
+
+// tablet
+
+// tablet album
+
+// desktop

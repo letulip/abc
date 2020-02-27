@@ -1,0 +1,31 @@
+.view {
+  border: $view-border;
+  border-collapse: collapse;
+}
+
+.view__row {
+  border: $view-border;
+}
+
+.view__data {
+  border: $view-border;
+  text-align: center;
+}
+
+.view__data--narrow {
+  width: 22%;
+}
+
+.view__data--patent {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "Патент РФ";
+    color: $color6;
+    font-size: small;
+    font-style: italic;
+    top: $outer-0-5;
+    right: $outer-1;
+  }
+}

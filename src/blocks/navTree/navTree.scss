@@ -1,0 +1,238 @@
+.navTree {
+  position: fixed;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  margin: $outer-1;
+  left: -290px;
+  top: 0;
+  padding-block-start: $outer-2;
+  height: 100vh;
+  background-color: $color2;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.navTree--visible {
+  left: -10px;
+}
+
+.navTree--visible .navTree__slider {
+  left: 290px;
+}
+
+.navTree--visible .navTree__arrowSlider {
+  margin-inline-start: 0;
+  transform: rotate(180deg) scale(1.3) translate(13px);
+}
+
+.navTree--visible .navTree__list {
+  opacity: 1;
+}
+
+.navTree__slider {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: $color5;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.navTree__arrowSlider {
+  display: block;
+  color: $color2;
+  margin-inline-start: 12px;
+  margin-block-start: 10px;
+  transform: scale(1.3);
+}
+
+.navTree__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navTree__list {
+  list-style: none;
+  padding-inline-start: $outer-1;
+  margin-block-end: $outer-1-2;
+  margin-block-start: 0;
+  opacity: 0.1;
+  transition: all ease-in-out 0.2s;
+}
+
+.navTree__list--first {
+  padding-inline-start: 0;
+}
+
+.navTree__list--second {
+  
+}
+
+.navTree__list--third {
+  padding-inline-start: $outer-2;
+  padding-inline-end: $outer-2;
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  margin-inline-start: $outer-2;
+  border: $navTree-border-list-third;
+  border-radius: $navTree-border-radius-list-third;
+  background-color: $color1;
+}
+
+.navTree__item {
+
+  &:last-child {
+    // margin-block-end: $outer-1-2;
+  }
+
+  & .navTree__list {
+    display: none;
+  }
+}
+
+.navTree__item--third {
+  border-bottom: $navTree-border-third;
+}
+
+.navTree__item--first-active .navTree__list--second,
+.navTree__item--second-active .navTree__list--third {
+  display: block;
+}
+
+.navTree__arrow {
+  display: inline-block;
+  width: 15px;
+  margin-inline-end: $outer-1;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.navTree__arrow--dropped {
+  transform: rotate(90deg);
+  width: 15px;
+}
+
+.navTree__firstLevel {
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  padding-inline-start: $outer-1;
+  padding-inline-end: $outer-1;
+  margin-block-end: $outer-1;
+  background-color: $color1;
+  border: $navTree-border-first;
+  border-radius: $navTree-border-radius-first;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $main-color;
+    border: $navTree-border-first-hover;
+    background-color: $color2;
+  }
+}
+
+.navTree__firstLevel--active {
+  background-color: $main-color;
+  color: $color1;
+}
+
+.navTree__secondLevel {
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  padding-inline-start: $outer-1;
+  padding-inline-end: $outer-2;
+  margin-block-end: $outer-0-5;
+  background-color: $color1;
+  border: $navTree-border-second;
+  border-radius: $navTree-border-radius-second;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $main-color;
+    border: $navTree-border-second-hover;
+    background-color: $color2;
+  }
+}
+
+.navTree__secondLevel--active {
+  background-color: $color3;
+  color: $main-color;
+}
+
+.navTree__thirdLevel {
+  padding-block-start: $outer-0-5;
+  padding-block-end: $outer-0-5;
+  padding-inline-start: $outer-1;
+  padding-inline-end: $outer-1;
+  background-color: $color1;
+  border-radius: $navTree-border-radius-third;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $main-color;
+    background-color: $color1;
+  }
+}
+
+.navTree__thirdLevel--active {
+  background-color: $color3;
+  color: $main-color;
+}
+
+.navTree__firstLevel--aquastop {
+  padding-inline-start: $outer-1-2;
+  padding-block-start: $outer-1;
+  padding-block-end: $outer-1-2;
+  background-color: $color3;
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+  }
+}
+
+@media (min-width: $width-mobile-album) {
+
+}
+
+@media (min-width: $width-tablet) {
+  
+}
+
+@media (min-width: $width-tablet-album) {
+  .navTree {
+    position: relative;
+    left: 0;
+    // top: 0;
+    padding-block-start: 0;
+    // padding-inline-start: $outer-1;
+    overflow: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .navTree__slider {
+    display: none;
+  }
+
+  .navTree__list {
+    opacity: 1;
+  }
+  .navTree__list--first {
+    padding-inline-start: $outer-1;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  
+}
+
+@media (min-width: $width-desktop-wide) {
+  
+}
