@@ -11,8 +11,6 @@
   padding-inline-end: $outer-0-5;
   background-color: $color1;
   margin: 0;
-  padding-block-start: $outer-1-2;
-  padding-block-end: $outer-1-2;
   border: $navTop-border;
 }
 
@@ -29,7 +27,7 @@
   align-items: center;
   position: relative;
 
-  &:not(:last-child) {
+  &:not(:last-child):not(.navTop__item--vr) {
     width: auto;
     max-width: 100px;
     color: $color5;
@@ -40,7 +38,8 @@
   }
   
   &:not(.navTop__item--vr) {
-    // cursor: pointer;
+    padding-block-start: $outer-1-2;
+    padding-block-end: $outer-1-2;
   }
   
   &:not(.navTop__item--vr):not(:last-child):hover,
@@ -54,4 +53,9 @@
   color: $color5;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  width: 20px;
+  background-image: url('../img/icons/hk-razdel_001.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
