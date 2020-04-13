@@ -104,15 +104,24 @@
 
 .navTree__arrow {
   display: inline-block;
-  width: 15px;
+  width: 12px;
+  height: 14px;
   margin-inline-end: $outer-1;
   transition: all;
   transition-duration: 0.2s;
+  background-image: url('../img/icons/catclose_01.svg');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+  align-self: center;
+}
+
+.navTree__arrow--second {
+  background-image: url('../img/icons/catclose_02.svg');
 }
 
 .navTree__arrow--dropped {
   transform: rotate(90deg);
-  width: 15px;
 }
 
 .navTree__firstLevel {
@@ -124,6 +133,7 @@
   background-color: $color1;
   border: $navTree-border-first;
   border-radius: $navTree-border-radius-first;
+  display: flex;
 
   &:hover,
   &:focus {
@@ -148,6 +158,7 @@
   background-color: $color1;
   border: $navTree-border-second;
   border-radius: $navTree-border-radius-second;
+  display: flex;
 
   &:hover,
   &:focus {
@@ -170,6 +181,7 @@
   padding-inline-end: $outer-1;
   background-color: $color1;
   border-radius: $navTree-border-radius-third;
+
 
   &:hover,
   &:focus {

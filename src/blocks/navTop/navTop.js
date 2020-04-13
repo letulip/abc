@@ -1,9 +1,14 @@
-const navTopItems = document.querySelectorAll(`.navTop__item:not(.navTop__item--vr)`);
+const navTop = document.querySelector(`.navTop`);
+const navTopLinkLong = navTop.querySelector(`.navTop__link--long`);
+const navTopLinkPopup = navTop.querySelector(`.navTop__linkPopUp`);
 
-const navTopItemOnMouseOver = (evt) => {
-  
+const navTopLinkLongOnMouseOver = (evt) => {
+  navTopLinkPopup.style.display = `block`;
 };
 
-navTopItems.forEach((item) => {
-  item.addEventListener(`mouseover`, navTopItemOnMouseOver);
-});
+const navTopLinkLongOnMouseOut = (evt) => {
+  navTopLinkPopup.style.display = `none`;
+};
+
+navTopLinkLong.addEventListener(`mouseover`, navTopLinkLongOnMouseOver);
+navTopLinkLong.addEventListener(`mouseout`, navTopLinkLongOnMouseOut);
