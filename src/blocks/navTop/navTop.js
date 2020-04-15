@@ -1,14 +1,13 @@
 const navTop = document.querySelector(`.navTop`);
-const navTopLinkLong = navTop.querySelector(`.navTop__link--long`);
-const navTopLinkPopup = navTop.querySelector(`.navTop__linkPopUp`);
+const navTopItemLong = navTop.querySelector(`.navTop__item--long`);
 
-const navTopLinkLongOnMouseOver = (evt) => {
-  navTopLinkPopup.style.display = `block`;
+const navTopItemLongOnMouseOver = (evt) => {
+  navTopItemLong.style.maxWidth = `none`;
 };
 
-const navTopLinkLongOnMouseOut = (evt) => {
-  navTopLinkPopup.style.display = `none`;
+const navTopItemLongOnMouseOut = (evt) => {
+  navTopItemLong.style.maxWidth = `100px`;
 };
 
-navTopLinkLong.addEventListener(`mouseover`, navTopLinkLongOnMouseOver);
-navTopLinkLong.addEventListener(`mouseout`, navTopLinkLongOnMouseOut);
+navTopItemLong.addEventListener(`mouseover`, navTopItemLongOnMouseOver);
+navTopItemLong.addEventListener(`mouseout`, navTopItemLongOnMouseOut);
