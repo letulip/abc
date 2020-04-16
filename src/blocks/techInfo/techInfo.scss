@@ -2,6 +2,7 @@
   width: 100%;
   border: $view-border;
   border-collapse: collapse;
+  position: relative;
 }
 
 .techInfo__row {
@@ -35,4 +36,46 @@
   text-align: left;
   padding-inline-start: $outer-1;
   background-color: $color8;
+}
+
+.techInfo__data--previewHover {
+  position: relative;
+}
+
+.techInfo__data--preview {
+  display: flex;
+  justify-content: center;
+  border: none;
+  // position: relative;
+}
+
+.techInfo__hover {
+  color: $main-color;
+  border-bottom: 1px solid $main-color;
+}
+
+.techInfo__preview {
+  position: absolute;
+  max-width: $width-mobile-container;
+  max-width: 100%;
+  border: 1px solid $color;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.techInfo__preview--visible {
+  display: block;
+}
+
+.techInfo__preview::after {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  content: "X";
+  font-weight: bold;
+}
+
+.techInfo__loupe {
+  max-height: 20px;
 }
