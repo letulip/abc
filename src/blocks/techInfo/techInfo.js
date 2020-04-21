@@ -2,17 +2,15 @@ const techInfo = document.querySelector(`.techInfo`);
 const techInfoPreviews = techInfo.querySelectorAll(`.techInfo__data--preview`);
 const techInfoPreviewHovers = techInfo.querySelectorAll(`.techInfo__data--previewHover`);
 
-const previewOnClick = (evt) => {
-  evt.preventDefault();
-  evt.target.classList.remove(`techInfo__preview--visible`);
-  evt.target.removeEventListener(`click`, previewOnClick);
+const previewCloseOnCLick = (evt) => {
+  evt.target.closest(`.techInfo__preview--visible`).classList.remove(`techInfo__preview--visible`);
 };
 
 const techInfoPreviewOnClick = (evt) => {
   const preview = evt.target.nextElementSibling;
   if (preview) {
     evt.target.nextElementSibling.classList.add(`techInfo__preview--visible`);
-    evt.target.nextElementSibling.addEventListener(`click`, previewOnClick);
+    // evt.target.nextElementSibling.addEventListener(`click`, previewOnClick);
   }
 };
 
@@ -30,6 +28,8 @@ const techInfoPreviewOnOut = (evt) => {
 
 techInfoPreviews.forEach((previewItem) => {
   previewItem.addEventListener(`click`, techInfoPreviewOnClick);
+  const previewClose = previewItem.querySelector(`.techInfo__previewClose`);
+  previewClose.addEventListener(`click`, previewCloseOnCLick);
 });
 
 techInfoPreviewHovers.forEach((previewItem) => {

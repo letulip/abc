@@ -59,23 +59,44 @@
   max-width: $width-mobile-container;
   max-width: 100%;
   border: 1px solid $color;
+  display: none;
+  background-color: $color1;
+}
+
+.techInfo__preview--small {
   left: 0;
   top: 0;
-  display: none;
+}
+
+.techInfo__preview--big {
+  left: calc(50% - 305px);
+  top: calc(50% - 57px);
 }
 
 .techInfo__preview--visible {
   display: block;
 }
 
-.techInfo__preview::after {
+.techInfo__previewClose {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.techInfo__previewClose::after {
   position: absolute;
   width: 40px;
   height: 40px;
+  top: 11px;
+  right: 0;
   content: "X";
   font-weight: bold;
 }
 
 .techInfo__loupe {
-  max-height: 20px;
+  display: block;
+  max-height: 30px;
+  cursor: pointer;
+  padding: 5px;
 }
