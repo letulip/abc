@@ -49,10 +49,10 @@ if (document.referrer.split('?').length === 1 ||
   const params = document.referrer.split('?');
   generateUrlParam(params[1]);
   const updatedUrl = new URL(window.location.href);
-  const tabIndex = tabs[updatedUrl.searchParams.get(urlPathname[2])];
+  const tabIndex = updatedUrl.searchParams.get(urlPathname[2]);
   if (tabs[tabIndex]) {
-    tabOnClick(tabs[updatedUrl.searchParams.get(urlPathname[2])]);
-    setActiveTabInput(updatedUrl.searchParams.get(urlPathname[2]));
+    tabOnClick(tabs[tabIndex]);
+    setActiveTabInput(tabIndex);
   } else {
     tabOnClick(tabs[0]);
     setActiveTabInput(0);
