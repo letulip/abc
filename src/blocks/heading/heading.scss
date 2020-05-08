@@ -1,7 +1,145 @@
 .heading {
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 10px;
 
+  @media (min-width: $width-tablet-album) {
+    max-width: $width-tablet-album-container;
+  }
 }
 
-.heading__active {
+.heding--light {
+  font-weight: lighter;
+}
+
+.heding--bold {
+  font-weight: bolder;
+}
+
+.heading--center {
+  text-align: center;
+}
+
+.heading--h1 {
+  font-size: $h1-mobile-font;
+  line-height: $h1-mobile-line;
+
+  @media (min-width: $width-mobile-album) {
+    font-size: $h1-tablet-font;
+    line-height: $h1-tablet-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $h1-desktop-font;
+    line-height: $h1-desktop-line;
+  }
+}
+
+.heading--h2 {
+  font-size: $h2-mobile-font;
+  line-height: $h2-mobile-line;
+  padding-bottom: 20px;
+
+  @media (min-width: $width-mobile-album) {
+    font-size: $h2-tablet-font;
+    line-height: $h2-tablet-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $h2-desktop-font;
+    line-height: $h2-desktop-line;
+  }
+}
+
+.heading--h3 {
+  font-size: $h3-mobile-font;
+  line-height: $h3-mobile-line;
+
+  @media (min-width: $width-mobile-album) {
+    font-size: $h3-tablet-font;
+    line-height: $h3-tablet-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $h3-desktop-font;
+    line-height: $h3-desktop-line;
+  }
+}
+
+.heading--h4 {
+  font-size: $h4-mobile-font;
+  line-height: $h4-mobile-line;
+  font-weight: 400;
+
+  @media (min-width: $width-mobile-album) {
+    font-size: $h4-tablet-font;
+    line-height: $h4-tablet-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $h4-desktop-font;
+    line-height: $h4-desktop-line;
+  }
+}
+
+.heading--h5 {
+  font-size: $h5-mobile-font;
+  line-height: $h5-mobile-line;
+  font-weight: 400;
+
+  @media (min-width: $width-mobile-album) {
+    font-size: $h5-tablet-font;
+    line-height: $h5-tablet-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $h5-desktop-font;
+    line-height: $h5-desktop-line;
+  }
+}
+
+.heading--h6 {
+  font-size: $h6-mobile-font;
+  line-height: $h6-mobile-line;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: $width-mobile-album) {
+    font-size: $h6-tablet-font;
+    line-height: $h6-tablet-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $h6-desktop-font;
+    line-height: $h6-desktop-line;
+  }
+}
+
+.heading--link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heading--center {
+  margin: 0 auto;
+}
+
+.heading--active {
   color: $color;
+}
+
+.heading__link {
+  text-decoration: none;
+  color: $main-bg-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $main-color;
+  }
+
+  &:visited {
+    color: $color4;
+  }
 }

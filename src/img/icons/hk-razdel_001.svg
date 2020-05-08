@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 0.0118989 0.0301771"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#DEDEDD;stroke-width:0.0006}
+    .str0 {stroke:#D2D1D1;stroke-width:0.0006}
+    .str2 {stroke:#E8E8E7;stroke-width:0.0006}
+    .str3 {stroke:#F2F2F2;stroke-width:0.0006}
+    .str4 {stroke:#F9F9F9;stroke-width:0.0006}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g>
+  <g>
+   <polyline class="fil0 str0" points="0.00026613,0.000133458 0.00780648,0.0151843 0.00026613,0.0300429 "/>
+   <polyline class="fil0 str1" points="0.0010182,0.000133458 0.00855856,0.0151843 0.0010182,0.0300429 "/>
+   <polyline class="fil0 str2" points="0.00176949,0.000133458 0.00930985,0.0151843 0.00176949,0.0300429 "/>
+   <polyline class="fil0 str3" points="0.00252156,0.000133458 0.0100619,0.0151843 0.00252156,0.0300429 "/>
+   <polyline class="fil0 str4" points="0.00327285,0.000133458 0.0108132,0.0151843 0.00327285,0.0300429 "/>
+   <polyline class="fil0 str4" points="0.00402492,0.000133458 0.0115653,0.0151843 0.00402492,0.0300429 "/>
+  </g>
+ </g>
+</svg>

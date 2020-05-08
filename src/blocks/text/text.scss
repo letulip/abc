@@ -1,5 +1,23 @@
 .text {
+  font-size: $text-tablet-font;
+  line-height: $text-tablet-line;
 
+  @media (min-width: $width-tablet-album) {
+    max-width: $width-tablet-album-container;
+    font-size: $text-desktop-font;
+    line-height: $text-desktop-line;
+  }
+}
+
+.text--sm {
+  font-size: $sm-text-mobile-font;
+  line-height: $sm-text-mobile-line;
+
+  @media (min-width: $width-tablet-album) {
+    font-size: $sm-text-desktop-font;
+    line-height: $sm-text-desktop-line;
+    max-width: $width-tablet-album-container;
+  }
 }
 
 .text__active {
