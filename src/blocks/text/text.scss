@@ -23,3 +23,25 @@
 .text__active {
   color: $color;
 }
+
+.text--link {
+  color: $main-color;
+  text-decoration: none;
+  border-bottom: 1px solid $main-color;
+}
+
+.text--link:hover,
+.text--link:focus {
+  color: $color;
+  border-bottom: 1px solid $color;
+}
+
+.text--link:active {
+  color: $color4;
+  border-bottom: 1px solid $color4;
+}
+
+.text--link:visited {
+  color: $color5;
+  border-bottom: 1px solid $color5;
+}
