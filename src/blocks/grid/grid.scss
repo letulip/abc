@@ -1,0 +1,69 @@
+.grid {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $width-tablet) {
+    flex-wrap: wrap;
+  }
+}
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    max-width: 49%;
+    padding: $outer-2;
+    margin-block-end: $outer-2;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    max-width: 230px;
+    padding: $outer-2;
+    margin-block-end: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 270px;
+    padding: $outer-2;
+  }
+}
+
+.grid__item--bordered {
+  border: 1px solid $color5;
+}
+
+.grid__item--link {
+  text-decoration: none;
+  color: $main-color;
+  border: 1px solid $main-color;
+}
+
+.grid__item--link:hover,
+.grid__item--link:focus {
+  color: $color;
+  border: 1px solid $color;
+}
+
+.grid__item--link:active {
+  color: $color4;
+  border: 1px solid $color4;
+}
+
+.grid__item--link:visited {
+  color: $color5;
+  border: 1px solid $color5;
+}
+
+.grid__img-wrapper {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__img {
+  width: 100%;
+  height: auto;
+}
