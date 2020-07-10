@@ -44,6 +44,7 @@
 .grid__item--link:focus {
   color: $color;
   border: 1px solid $color;
+  box-shadow: 0 0 7px 0 $color;
 }
 
 .grid__item--link:active {
